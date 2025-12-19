@@ -21,7 +21,6 @@ void Graph::dijkstra(const string& source, const string& destination, int choice
     distance[source] = 0;//distances of source is set to zero
     priority_queue<pair<int, string>, vector<pair<int, string>>, greater<>> pq; //initializing min priority queue
     pq.push({0, source});
-
     while(!pq.empty()){
         int d = pq.top().first;
         string loc = pq.top().second;
